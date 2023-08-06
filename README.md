@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Figma Design
 
-[https://www.figma.com/file/HjryyPXbT7SCHD2IiiGsUy/Untitled?type=design&node-id=15-856&mode=design&t=Ot4vYKvwPAQ73t75-0](https://www.figma.com/file/HjryyPXbT7SCHD2IiiGsUy/Untitled?type=design&node-id=15-856&mode=design&t=Ot4vYKvwPAQ73t75-0)
+[https://www.figma.com/file/HjryyPXbT7SCHD2IiiGsUy/Untitled?type=design&node-id=0%3A1&mode=design&t=MQsSElAnP0irnlBl-1](https://www.figma.com/file/HjryyPXbT7SCHD2IiiGsUy/Untitled?type=design&node-id=0%3A1&mode=design&t=MQsSElAnP0irnlBl-1)
 
 ## Getting Started
 
@@ -40,3 +40,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+mailchimp:
+5b55dff0ba70f1803f3ae6d99d6b03fb-us21

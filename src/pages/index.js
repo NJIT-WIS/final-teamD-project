@@ -2,10 +2,34 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-
+import Header from '@/components/Header'
+import ContentCard from '@/components/ContentCard'
+import Footer from '@/components/Footer'
+import { useState } from 'react'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const [contentList, setContentList] = useState([
+    {
+      imageUrl: '/starbucks.png',
+      title: 'Starbucks',
+      content: "Experice the finest coffee and handcrafted beverages",
+      url: 'https://www.starbucks.com/'
+    },
+    {
+      imageUrl: '/peet.png',
+      title: "Peet's Coffee",
+      content: "Discover the rich and distinct flavors of our signature coffees",
+      url: 'https://www.peets.com/'
+    },
+    {
+      imageUrl: '/dunkin.png',
+      title: "Dunkin's Donuts",
+      content: "America runs on Dunkin'-grab your favorite coffee and donuts",
+      url: 'https://www.dunkindonuts.com/'
+    }
+  ])
+
   return (
     <>
       <Head>
@@ -14,110 +38,24 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.js</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+      <div className="bg-[url('/e2AY3k8EYn.png')] bg-cover bg-no-repeat h-full flex flex-col justify-between">
+        <Header></Header>
+        <div className='flex flex-col justify-between items-center'>
+          <div className=" flex flex-row flex-wrap items-center justify-center space-x-5">
+            {
+              contentList.map((item, index) => {
+                return (
+                  <ContentCard item={item} key={index} ></ContentCard>
+                )
+              })
+            }
+          </div>
+          <div className='bg-[#E3BA8A] mt-6 w-20 h-10 text-center flex flex-col justify-center'>
+            <span className='font-bold'>Feedback</span>
           </div>
         </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+        <Footer></Footer>
+      </div >
     </>
   )
 }
