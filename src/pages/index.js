@@ -2,10 +2,34 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import SubscribeForm from '@/components/subscribeForm'
+import Header from '@/components/Header'
+import ContentCard from '@/components/ContentCard'
+import Footer from '@/components/Footer'
+import { useState } from 'react'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const [contentList, setContentList] = useState([
+    {
+      imageUrl: '/starbucks.png',
+      title: 'Starbucks',
+      content: "Experice the finest coffee and handcrafted beverages",
+      url: 'https://www.starbucks.com/'
+    },
+    {
+      imageUrl: '/peet.png',
+      title: "Peet's Coffee",
+      content: "Discover the rich and distinct flavors of our signature coffees",
+      url: 'https://www.peets.com/'
+    },
+    {
+      imageUrl: '/dunkin.png',
+      title: "Dunkin's Donuts",
+      content: "America runs on Dunkin'-grab your favorite coffee and donuts",
+      url: 'https://www.dunkindonuts.com/'
+    }
+  ])
+
   return (
     <>
       <Head>
@@ -14,9 +38,24 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <SubscribeForm />
-      </main>
+      <div className="bg-[url('/e2AY3k8EYn.png')] bg-cover bg-no-repeat h-full flex flex-col justify-between">
+        <Header></Header>
+        <div className='flex flex-col justify-between items-center'>
+          <div className=" flex flex-row flex-wrap items-center justify-center space-x-5">
+            {
+              contentList.map((item, index) => {
+                return (
+                  <ContentCard item={item} key={index} ></ContentCard>
+                )
+              })
+            }
+          </div>
+          <div className='bg-[#E3BA8A] mt-6 w-20 h-10 text-center flex flex-col justify-center'>
+            <span className='font-bold'>Feedback</span>
+          </div>
+        </div>
+        <Footer></Footer>
+      </div >
     </>
   )
 }
