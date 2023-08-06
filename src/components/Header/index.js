@@ -32,6 +32,10 @@ const Header = () => {
     {
       title: "Contact",
       url: "/ContactPage"
+    },
+    {
+      title: "Video",
+      url: ""
     }
   ])
 
