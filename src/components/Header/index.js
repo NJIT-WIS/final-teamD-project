@@ -35,14 +35,14 @@ const Header = () => {
     },
     {
       title: "Video",
-      url: "www.baidu.com",
+      url: "https://www.baidu.com",
       type: "link"
     }
   ])
 
   const handleClick = (item) => {
-    if (item.type && item.type == "link") {
-      window.open(item.url, "_blank")
+    if (item.type == "link") {
+      window.location.href = item.url
     } else {
       Router.push(item.url)
     }
@@ -58,6 +58,13 @@ const Header = () => {
           <div className="h-10 space-x-10 w-11/12 mt-2 mb-2 inline-flex items-center font-bold text-l  justify-center bg-[#5F411F]">
             {
               contentList.map((item, index) => {
+                // if (item.type == "link") {
+                //   return (
+                //     <span key={item.title} className="text-[#ffffff] hover:text-xl hover:cursor-pointer" >
+                //       <a href={item.url}>{item.title}</a>
+                //     </span>
+                //   )
+                // }
                 return (
                   <span key={item.title} className="text-[#ffffff] hover:text-xl hover:cursor-pointer" onClick={() => handleClick(item)}>
                     {item.title}
