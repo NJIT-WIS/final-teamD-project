@@ -13,7 +13,7 @@ class index extends Component {
   }
   render() {
     return (
-      <div className="bg-[url('/e2AY3k8EYn.png')] bg-cover bg-no-repeat h-full flex flex-col justify-center">
+      <div className="bg-[url('../../public/e2AY3k8EYn.png')] bg-cover bg-no-repeat h-full flex flex-col justify-center">
         {
           this.state.contentList.map((item, index) => {
             return (

@@ -9,7 +9,7 @@ class index extends Component {
   }
   render() {
     return (
-      <div className="bg-[url('/e2AY3k8EYn.png')] bg-cover bg-no-repeat h-full flex flex-col justify-center items-center">
+      <div className="bg-[url('../../public/e2AY3k8EYn.png')] bg-cover bg-no-repeat h-full flex flex-col justify-center items-center">
         <div className='h-1/3 flex flex-col justify-center'>
           <span className='font-bold text-[220px] text-[#FFFFFF]'>THE BLOG</span>
         </div>
