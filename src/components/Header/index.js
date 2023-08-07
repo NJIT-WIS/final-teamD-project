@@ -35,13 +35,13 @@ const Header = () => {
     },
     {
       title: "Video",
-      url: "",
+      url: "www.baidu.com",
       type: "link"
     }
   ])
 
   const handleClick = (item) => {
-    if (item.type && item.type === "link") {
+    if (item.type && item.type == "link") {
       window.open(item.url, "_blank")
     } else {
       Router.push(item.url)
