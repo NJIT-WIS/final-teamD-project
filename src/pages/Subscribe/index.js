@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import SubscibeForm from '@/components/SubscribeForm'
+import SubscibeForm from '@/components/subscribeForm'
 class index extends Component {
   constructor(props) {
     super(props);

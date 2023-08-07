@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "npx playwright test"
+    "test": "npx playwright test",
+    "export": "next export"
+
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.80",
