@@ -13,7 +13,7 @@ class index extends Component {
   }
   render() {
     return (
-      <div className="bg-[url('../../public/e2AY3k8EYn.png')] bg-cover bg-no-repeat h-full">
+      <div className="bg-[url('/e2AY3k8EYn.png')] bg-cover bg-no-repeat h-full">
         <div className='w-1/2 h-full flex justify-center items-center'>
           <SubscibeForm ></SubscibeForm>
         </div>
