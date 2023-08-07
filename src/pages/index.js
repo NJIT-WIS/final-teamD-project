@@ -7,7 +7,7 @@ import ContentCard from '@/components/ContentCard'
 import Footer from '@/components/Footer'
 import { useState } from 'react'
 const inter = Inter({ subsets: ['latin'] })
-
+import Script from 'next/script'
 export default function Home() {
   const [contentList, setContentList] = useState([
     {
@@ -38,6 +38,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-WPYL16KZPS" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-WPYL16KZPS');
+        `}
+      </Script>
       <div className="bg-[url('/e2AY3k8EYn.png')] bg-cover bg-no-repeat h-full flex flex-col justify-between">
         <Header></Header>
         <div className='flex flex-col justify-between items-center'>
