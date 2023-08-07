@@ -35,12 +35,17 @@ const Header = () => {
     },
     {
       title: "Video",
-      url: ""
+      url: "",
+      type: "link"
     }
   ])
 
-  const handleClick = (url) => {
-    Router.push(url)
+  const handleClick = (item) => {
+    if (item.type && item.type === "link") {
+      window.open(item.url, "_blank")
+    } else {
+      Router.push(item.url)
+    }
   }
 
   return (
@@ -54,7 +59,7 @@ const Header = () => {
             {
               contentList.map((item, index) => {
                 return (
-                  <span className="text-[#ffffff] hover:text-xl hover:cursor-pointer" onClick={() => handleClick(item.url)}>
+                  <span key={item.title} className="text-[#ffffff] hover:text-xl hover:cursor-pointer" onClick={() => handleClick(item)}>
                     {item.title}
                   </span>
                 )

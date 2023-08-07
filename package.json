@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.80",
+    "axios": "^1.4.0",
+    "axios-hooks": "^4.0.0",
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0"

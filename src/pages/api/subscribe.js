@@ -6,14 +6,15 @@ mailchimp.setConfig({
 });
 
 export default async (req, res) => {
+  debugger
   const { email } = req.body;
-
+  // const email = "x17621778637@outlook.com"
   if (!email) {
     return res.status(400).json({ error: 'Email is required' });
   }
 
   try {
-    await mailchimp.lists.addListMember(process.env.MAILCHIMP_LIST_ID, {
+    await mailchimp.lists.addListMember(process.env.MAILCHIMP_AUDIENCE_ID, {
       email_address: email,
       status: 'subscribed'
     });
