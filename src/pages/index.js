@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css'
 import Header from '@/components/Header'
 import ContentCard from '@/components/ContentCard'
 import Footer from '@/components/Footer'
+import CookiesShower from '@/components/CookiesShower'
 import { useState } from 'react'
 const inter = Inter({ subsets: ['latin'] })
 import Script from 'next/script'
@@ -66,6 +67,7 @@ export default function Home() {
             <span className='font-bold'>Feedback</span>
           </div>
         </div>
+        <CookiesShower></CookiesShower>
         <Footer></Footer>
       </div >
     </>
