@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## vercel location
+
+[https://final-team-d-project.vercel.app/](https://final-team-d-project.vercel.app/)
+
 ## Figma Design
 
 [https://www.figma.com/file/HjryyPXbT7SCHD2IiiGsUy/Untitled?type=design&node-id=0%3A1&mode=design&t=MQsSElAnP0irnlBl-1](https://www.figma.com/file/HjryyPXbT7SCHD2IiiGsUy/Untitled?type=design&node-id=0%3A1&mode=design&t=MQsSElAnP0irnlBl-1)
