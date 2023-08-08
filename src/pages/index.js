@@ -38,14 +38,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-WPYL16KZPS" />
+
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-WPYL16KZPS"></Script>
       <Script id="google-analytics">
-        {`
+        {
+          `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-WPYL16KZPS');
-        `}
+          `
+        }
       </Script>
       <div className="bg-[url('/e2AY3k8EYn.png')] bg-cover bg-center bg-no-repeat h-full flex flex-col justify-between">
         <Header></Header>
