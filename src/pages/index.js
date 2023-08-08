@@ -40,14 +40,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-WPYL16KZPS"></Script>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-2EMG6TDRNY"></Script>
       <Script id="google-analytics">
         {
           `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-WPYL16KZPS');
+          gtag('config', 'G-2EMG6TDRNY');
           `
         }
       </Script>
