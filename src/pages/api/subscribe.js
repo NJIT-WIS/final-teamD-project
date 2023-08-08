@@ -16,7 +16,7 @@ export default async (req, res) => {
       email_address: email,
       status: 'subscribed'
     });
-    return res.status(201).json({ code: 400, error: '' });
+    return res.status(201).json({ code: 201, error: '' });
   } catch (error) {
     // Error handling 會放在最後一個章節解釋
     if (error.response.body.title === "Member Exists") {

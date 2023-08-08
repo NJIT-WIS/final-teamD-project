@@ -28,7 +28,7 @@ const index = () => {
 
     const resJson = await res.json();
     switch (resJson.code) {
-      case 200:
+      case 201:
         message.success('Thank you for subscribing!')
         break;
       case 400:
