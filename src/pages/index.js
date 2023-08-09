@@ -63,9 +63,9 @@ export default function Home() {
               })
             }
           </div>
-          <div className='bg-[#E3BA8A] mt-6 w-20 h-10 text-center flex flex-col justify-center'>
+          {/* <div className='bg-[#E3BA8A] mt-6 w-20 h-10 text-center flex flex-col justify-center'>
             <span className='font-bold'>Feedback</span>
-          </div>
+          </div> */}
         </div>
         <CookiesShower></CookiesShower>
         <Footer></Footer>

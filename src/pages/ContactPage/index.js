@@ -26,8 +26,10 @@ class index extends Component {
             <TwitterOutlined className='hover:cursor-pointer ' />
           </div>
           <div className='text-[100px] hover:text-[105px]'>
-            <MailOutlined className='hover:cursor-pointer ' />
-          </div>
+              <a href="mailto:your-email@example.com">
+         <MailOutlined className='hover:cursor-pointer ' />
+           </a>
+        </div>
           <div className='text-[100px] hover:text-[105px]'>
             <LinkedinOutlined className='hover:cursor-pointer ' />
           </div>

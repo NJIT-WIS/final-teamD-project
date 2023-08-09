@@ -14,14 +14,14 @@ class index extends Component {
           <span className='font-bold text-[220px] text-[#FFFFFF]'>THE BLOG</span>
         </div>
         <div className="h-2/3 w-full flex flex-row justify-center ">
-          <div className="w-11/12 h-4/5 flex flex-row  bg-[url('/e2AY3k8EYn.png')] bg-cover bg-left rounded-lg">
+          <div className="w-11/12 h-4/5 flex flex-row  bg-[url('/coffbg.png')] bg-cover bg-left rounded-lg">
             <div className='w-1/2 hover:border hover:rounded-lg '>
               <div className="w-full h-1/2 ">
                 <div className="w-11/12 h-4/5 mt-5 bg-[url('/starbucksPhoto.jpeg')] bg-cover bg-center bg-no-repeat">
                 </div>
               </div>
               <div className="w-full h-1/2 flex flex-col">
-                <span className='text-indigo-700 mb-2'>
+              <span className='text-indigo-800 font-bold mb-2'>
                   Sunday, 06 Aug 2023
                 </span>
                 <span className='text-2xl text-[#ffffff] hover:cursor-pointer mb-2' >Starbucks: Crafting Coffee Magic for the World</span>
@@ -34,7 +34,7 @@ class index extends Component {
               <div className='h-1/2 w-full flex flex-row hover:border rounded-m'>
                 <div className="h-4/5 w-1/2 mt-5 bg-[url('/DunkinPhoto.jpeg')] bg-cover bg-center bg-no-repeat"></div>
                 <div className='h-full w-1/2 px-2 flex flex-col'>
-                  <span className='text-indigo-700 mt-5 mb-2'>
+                <span className='text-indigo-400 font-bold mb-2'>
                     Sunday, 06 Aug 2023
                   </span>
                   <span className='text-xl text-[#ffffff] hover:cursor-pointer mb-2' >Dunkin' Donuts: Delightful Donuts and Beyond</span>
@@ -46,7 +46,7 @@ class index extends Component {
               <div className='h-1/2 w-full flex flex-row hover:border rounded-m'>
                 <div className="h-4/5 w-1/2 mt-5 bg-[url('/man.png')] bg-cover bg-center bg-no-repeat"></div>
                 <div className='h-full w-1/2 px-2 flex flex-col'>
-                  <span className='text-indigo-700 mb-2 mt-5'>
+                <span className='text-indigo-800 font-bold mb-2'>
                     Sunday, 06 Aug 2023
                   </span>
                   <span className='text-xl text-[#ffffff] hover:cursor-pointer mb-2' >Peet's Coffee:Sip Sustainability,Savor Quality</span>
