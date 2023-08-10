@@ -35,7 +35,7 @@ const Header = () => {
     },
     {
       title: "Video",
-      url: "https://www.baidu.com",
+      url: "https://drive.google.com/file/d/1YUbDGpf28bwLUqHLcmIg6_pgCuowVaub/view?usp=sharing",
       type: "link"
     }
   ])

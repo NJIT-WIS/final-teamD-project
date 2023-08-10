@@ -8,6 +8,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 [https://www.figma.com/file/HjryyPXbT7SCHD2IiiGsUy/Untitled?type=design&node-id=0%3A1&mode=design&t=MQsSElAnP0irnlBl-1](https://www.figma.com/file/HjryyPXbT7SCHD2IiiGsUy/Untitled?type=design&node-id=0%3A1&mode=design&t=MQsSElAnP0irnlBl-1)
 
+## Presentation Video
+[https://drive.google.com/file/d/1YUbDGpf28bwLUqHLcmIg6_pgCuowVaub/view?usp=sharing ](https://drive.google.com/file/d/1YUbDGpf28bwLUqHLcmIg6_pgCuowVaub/view?usp=sharing)  
+
+## Presentation PPT
+[https://docs.google.com/presentation/d/1gBsboAB1VBJcTNCZ2JXmmNha4sAgGG-u/edit?usp=sharing&ouid=112611608533373946592&rtpof=true&sd=true](https://docs.google.com/presentation/d/1gBsboAB1VBJcTNCZ2JXmmNha4sAgGG-u/edit?usp=sharing&ouid=112611608533373946592&rtpof=true&sd=true)
+
+
 ## Getting Started
 
 First, run the development server:
